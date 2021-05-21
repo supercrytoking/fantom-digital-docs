@@ -1,11 +1,13 @@
 export default {
-  repository: 'https://github.com/shuding/nextra',
-  titleSuffix: ' – Nextra',
+  repository: 'https://github.com/fantomdigital',
+  titleSuffix: ' – Fantom Digital',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
+      <span className="mr-2 font-extrabold hidden md:inline">
+        Fantom Digital
+      </span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        The Next.js Site Builder
+        Creative Platform
       </span>
     </>
   ),
@@ -15,15 +17,18 @@ export default {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
-      <meta name="description" content="Nextra: the Next.js site builder" />
-      <meta name="og:description" content="Nextra: the Next.js site builder" />
+      <meta name="description" content="Fantom Digital: Creative Platform" />
+      <meta name="og:description" content="Fantom Digital: Creative Platform" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="twitter:site:domain" content="nextra.vercel.app" />
-      <meta name="twitter:url" content="https://nextra.vercel.app" />
-      <meta name="og:title" content="Nextra: Next.js static site generator" />
-      <meta name="og:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="apple-mobile-web-app-title" content="Nextra" />
+      <meta name="twitter:image" content="https://docs.fantom.digital/og.png" />
+      <meta name="twitter:site:domain" content="Fantom Digital.vercel.app" />
+      <meta name="twitter:url" content="https://docs.fantom.digital" />
+      <meta
+        name="og:title"
+        content="Fantom Digital: Next.js static site generator"
+      />
+      <meta name="og:image" content="https://docs.fantom.digital/og.png" />
+      <meta name="apple-mobile-web-app-title" content="Fantom Digital" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -61,5 +66,5 @@ export default {
   nextLinks: true,
   footer: true,
   footerEditOnGitHubLink: true,
-  footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
+  footerText: <>MIT {new Date().getFullYear()} © Fantom Digital</>,
 }
