@@ -1,7 +1,8 @@
 {
   "index": "Fantom Digital",
   "philosophy": "Our Philosophy",
-  "howto": "Getting Started",
+  "getting-started": "Getting Started",
+  "rest-api": "API",
   "faq": "FAQ",
   "technicals": "The Technicals",
   "contact": "Contact & Social"
