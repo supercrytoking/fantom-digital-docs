@@ -1,4 +1,8 @@
+import { Tree } from '@geist-ui/react'
+
 # Minting
+
+## Single Minting
 
 Minting is easy on Fantom Digital. We think NFT's should be for everyone — not only for well-versed tech-nerds like us. NFT's are an incredible techology that should be used to document memories, share with friends, and keep with you forever.
 
@@ -11,3 +15,37 @@ When you arrive to the web-app, you'll be presented with the option to conncet y
 Once your wallet is connected to our app, creating your own NFT is as easy an uploading an image (support for other media types coming soon!), and giving it a title, author, and description. Optionally, you can add attributes to your NFT to make it a bit more unique. Attributes allow you to give your NFT a little more unique-ness... for more information, [OpenSea has a great run-down of NFT metadata standards](https://docs.opensea.io/docs/metadata-standards), which fantom.digital does our best to follow.
 
 When you ready to create your NFT, two different payloads are delivered to the InterPlanetary FileSystem (IPFS): one containing your image as a buffer and one containing the NFT's metadata, as specified above, which includes a direct URI to the image delivered the first payload.
+
+## Batch Minting
+
+**Batch minting is unfinished, upcoming feature. These docs are unfinished.**
+
+To ensure maximum flexibilty, batch minting requires uploading a .zip file with your assets in a specific file structure. Below are the specifications:
+
+<br />
+
+<Tree initialExpand>
+    <Tree.Folder name="my_nft_payload.zip">
+        <Tree.File name="metadata.json" />
+        <Tree.File name="IMG_001.jpg" />
+        <Tree.File name="IMG_002.jpg" />
+        <Tree.File name="IMG_003.png" />
+        <Tree.File name="crazy_cat.gif" />
+    </Tree.Folder>
+</Tree>
+
+This structure allows you to upload both image assets and a `metadata.json` file, containing all the information about each NFT that will be created.
+
+### Inside `metadata.json`
+
+```
+[
+    {
+        "title": "My Cool NFT"
+    }
+]
+```
+
+## Series Verification
+
+Series verification is a process we use to create unique sets of NFTs. Exercitation culpa pariatur...
